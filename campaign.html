@@ -45,7 +45,7 @@
       <div class="aside-body">
         
         <ul class="nav nav-aside">
-          <li class="nav-item"><a href="./home.html" class="nav-link"><i data-feather="home"></i> <span class="marine-active-menu">Home</span></a></li>
+          <li class="nav-item"><a data-toggle="modal" data-target="#homeModal" href="" class="nav-link"><i data-feather="home"></i> <span class="marine-active-menu">Home</span></a></li>
 
           <li class="nav-item"><a href="dashboard.html" class="nav-link"><i data-feather="bar-chart-2"></i> <span class="marine-active-menu">Dashboard</span></a></li>
           <li class="nav-item active"><a href="./campaign.html" class="nav-link"><i data-feather="archive"></i><span>Campaigns</span></a></li>
@@ -87,7 +87,7 @@
               </div>
 
               <div id="myCard">
-                <div class="card card-active">
+                <div class="card card-active" onclick="firstImage()">
                   <div class="card-body">
                     <i data-feather="check-circle" class="check"></i>
                     <div class="row">
@@ -99,10 +99,18 @@
                         <p class="tx-14">Tap into Airtel’s massive and diverse customer base to market your product and offers.</p>
                         <a href="./create-campaign.html" class="btn btn-primary pd-x-40">Create</a>
                       </div>
+                   <div class="col-md-5 d-md-block d-xl-block d-lg-block d-none">
+                    <div class="neg-div">
+                      <img src="./assets/img/create_ads_illustration.svg" id="firstImg" class="img-fluid" alt="" srcset="">
+                      <img src="./assets/img/become_partners_illustration.svg" id="secondImg" class="img-fluid mg-t-100" alt="" srcset="">
+                    </div>
                    </div>
                   </div>
+
+                  </div>
                 </div>
-                <div class="card mt-3">
+                
+                <div class="card mt-3" onclick="secondImage()">
                   <div class="card-body">
                     <i data-feather="check-circle" class="check"></i>
                     <div class="row">
@@ -118,11 +126,31 @@
                   </div>
                 </div>
                
-              </div>
             
-
-         
         </div>
+
+         <!--Home Modal -->
+         <div class="modal fade" id="homeModal" tabindex="-1" aria-labelledby="homeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content pd-md-x-30 pd-x-20 pd-y-20">
+              <div class="modal-header bd-b-0">
+                <p class="tx-18 modal-title" id="homeModalLabel">Go back to home</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="tx-16 tx-gray mb-0">Are you sure you want to leave this page?</p>
+              </div>
+              <div class="modal-footer bd-t-0">
+                <a href="./home.html" type="button" class="btn btn-primary w-100">Continue</a>
+
+                <button type="button" class="btn btn-outline-primary w-100" data-dismiss="modal">No, Thanks</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </div>
 
     <script src="assets/lib/jquery/jquery.min.js"></script>
@@ -153,6 +181,36 @@
             current[0].className = current[0].className.replace(" card-active", "");
             this.className += " card-active";
           });
+        }
+    </script>
+    <script>
+      function firstImage() {
+        if (document.getElementById('secondImg')) {
+
+          if (document.getElementById('secondImg').style.display == 'none') {
+              document.getElementById('secondImg').style.display = 'block';
+              document.getElementById('firstImg').style.display = 'none';
+          }
+          else {
+              document.getElementById('secondImg').style.display = 'none';
+              document.getElementById('firstImg').style.display = 'block';
+          }
+          }
+        }
+
+        function secondImage() {
+            if (document.getElementById('firstImg')) {
+
+                if (document.getElementById('firstImg').style.display == 'none') {
+                    document.getElementById('firstImg').style.display = 'block';
+                    document.getElementById('secondImg').style.display = 'none';
+                }
+                else {
+                    document.getElementById('firstImg').style.display = 'none';
+                    document.getElementById('secondImg').style.display = 'block';
+                }
+            }
+         
         }
     </script>
   </body>

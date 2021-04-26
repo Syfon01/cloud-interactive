@@ -92,7 +92,6 @@
 }
 .aside-header{
   background-color: #020101!important;
-  height: 75px;
   border-bottom: 0;
 }
 .aside-body{
@@ -231,7 +230,13 @@
     thead{
       background-color: #EE1C241A;
     }
-  
+    #secondImg{
+      display: none;
+    }
+    .neg-div{
+      position: absolute;
+      z-index: 999;
+    }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
   .started-btn{

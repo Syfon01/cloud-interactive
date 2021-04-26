@@ -47,7 +47,7 @@
         
         <ul class="nav nav-aside">
           <!-- <li class="nav-label">Dashboard</li> -->
-          <li class="nav-item"><a href="./home.html" class="nav-link"><i data-feather="home"></i> <span class="marine-active-menu">Home</span></a></li>
+          <li class="nav-item"><a data-toggle="modal" data-target="#homeModal" href="" class="nav-link"><i data-feather="home"></i> <span class="marine-active-menu">Home</span></a></li>
 
           <li class="nav-item"><a href="dashboard.html" class="nav-link"><i data-feather="bar-chart-2"></i> <span class="marine-active-menu">Dashboard</span></a></li>
           <li class="nav-item active"><a href="./campaign.html" class="nav-link"><i data-feather="archive"></i><span>Campaigns</span></a></li>
@@ -142,6 +142,28 @@
               </div>
             </div>
           </div>
+           <!--Home Modal -->
+           <div class="modal fade" id="homeModal" tabindex="-1" aria-labelledby="homeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content pd-md-x-30 pd-x-20 pd-y-20">
+                <div class="modal-header bd-b-0">
+                  <p class="tx-18 modal-title" id="homeModalLabel">Go back to home</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="tx-16 tx-gray mb-0">Are you sure you want to leave this page?</p>
+                </div>
+                <div class="modal-footer bd-t-0">
+                  <a href="./home.html" type="button" class="btn btn-primary w-100">Continue</a>
+
+                  <button type="button" class="btn btn-outline-primary w-100" data-dismiss="modal">No, Thanks</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
     </div>
 
