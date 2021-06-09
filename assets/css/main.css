@@ -114,9 +114,16 @@
 }
 .nav-aside .nav-link{
   padding: 1.5rem 0rem;
+  color:#F0F1FA;
 }
 .bg-blue{
   background-color: #4847E0;
+}
+.tx-green{
+  color: #029557;
+}
+.tx-green-light{
+  color: #43B345;
 }
 .bg-green{
   background-color: #00DEA5;

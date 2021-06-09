@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cloud - Interactive Associates">
+    <title>Cloud - Interactive Associates</title>
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/jqvmap/jqvmap.min.css" rel="stylesheet">
+
+    <link href="assets/lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="assets/lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="assets/lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="assets/lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Page CSS --> 
+    <link rel="stylesheet" href="assets/css/progress.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+
+    <aside class="aside aside-fixed">
+      <div class="aside-header">
+        <a href="dashboard.html" class="aside-logo">
+          <div class="pd-50">
+            <img src="./assets/img/logo.svg" class="img-fluid logo" alt="" srcset="">
+          </div>
+        </a>
+        <a href="" class="aside-menu-link">
+          <i data-feather="menu"></i>
+          <i data-feather="x"></i>
+        </a>
+      </div>
+      <div class="aside-body">
+        
+        <ul class="nav nav-aside">
+          <!-- <li class="nav-label">Dashboard</li> -->
+          <li class="nav-item" >
+            <a href="" class="nav-link" data-toggle="modal" data-target="#fundModal"><i class="fa fa-home mr-3"></i> <span >Home</span></a></li>
+
+          <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span >Dashboard</span></a></li>
+          <li class="nav-item"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive mr-3"></i><span>Campaigns</span></a></li>
+          <li class="nav-item"><a href="./partner.html" class="nav-link"><i class="fa fa-handshake mr-3 tx-muted"></i><span>Partners</span></a></li>
+          <li class="nav-item active"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
+          
+          <li class="nav-item"><a href="./setting.html" class="nav-link"><i class="fa fa-cog mr-3"></i><span>Settings</span></a></li>
+          
+        </ul>
+               
+      </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+      <div class="content-header shadow-dash bd-b-0">
+        <div class="content-search">
+          <i data-feather="search"></i>
+          <input type="search" class="form-control" placeholder="Search...">
+        </div>
+        <nav class="nav">
+          <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
+          <a href="" class="nav-link"><i data-feather="grid"></i></a>
+          <a href="" class="nav-link"><i data-feather="align-left"></i></a>
+        </nav>
+      </div><!-- content-header -->
+
+      <div class="content-body">
+        <div class="container pd-x-0">
+            <div class="row justify-content-between">
+              <div class="col-md-6 col-12">
+                <p class="mg-b-0 tx-26 tx-bold">Billing Overview</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-7 col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="tx-18">Billing Information</p>
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <p class="tx-uppercase mb-0 tx-16">Current Balance</p>
+                        <p class="tx-32 tx-semibold tx-green">+ N245,000.00</p>
+                        <button class="btn btn-primary mg-t-20 mg-md-t-30" data-toggle="modal" data-target="#fundModal"> <i class="fa fa-plus mg-r-5" ></i> Fund Wallet </button>
+                      </div>
+                      <div class="col-md-6 col-12 mg-t-20 mg-md-t-0">
+                        <p class="mb-1 tx-16">Auto recharge</p>
+                        <div class="custom-control custom-switch mg-t-10">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                          <label class="custom-control-label tx-blac" for="customSwitch1">Disabled</label>
+                        </div>
+                        
+                        <div class="mg-t-20">
+                          <p class="tx-16 mb-1">Invoice</p>
+                          <p class="tx-12 tx-blac">Your next invoice will be ready on 12th Sept. 2021</p>
+                          <div class="d-flex">
+                            <select class="custom-select mg-r-10">
+                              <option selected>August 2021</option>
+                              <option value="1">August 2021</option>
+                              <option value="2">October 2021</option>
+                              <option value="3">March 2021</option>
+                            </select>
+
+                            <select class="custom-select">
+                              <option selected>PDF</option>
+                              <option value="1">PDF</option>
+                              <option value="2">CSV</option>
+                              <option value="3">EXV</option>
+                            </select>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-12 mg-t-20 mg-md-t-0">
+                <div class="card card-height">
+                  <div class="card-body">
+                    <p class="tx-18">Preferences</p>
+                    <p class="tx-16">Service Address (for taxation purposes)</p>
+                    <p class="tx-16">
+                      1 Asubiaro Street, <br/>Jibowu Yaba, <br/>Lagos
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="row mg-t-20">
+              <div class="col-md-7 col-12">
+                <div class="row justify-content-between">
+                  <div class="col-md-4 col-12">
+                    <p class="mg-md-b-0 pd-t-10">Usauge Summary</p>
+                  </div>
+                  <div class="col-md-4 col-12">   
+                    <div class="d-flex">
+                      <select class="custom-select col-7">
+                        <option selected>August 2021</option>
+                        <option value="1">August 2021</option>
+                        <option value="2">October 2021</option>
+                        <option value="3">March 2021</option>
+                      </select>
+                    <p class="mg-b-10 ml-auto pd-t-10">
+                      <a href="" class="">View all</a>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table" id="campaig">
+                        <thead class="tx-uppercase tx-medium">
+                          <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col" class="tx-right">Cost</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="tx-medium">
+                            <td>Total</td>
+                            <td class="tx-right">N250,000</td>
+                          </tr>
+                          <tr>
+                            <td>Enterprise Table</td>
+                            <td class="tx-right">N250,000</td>
+                          </tr>
+                          <tr>
+                            <td>HOR Campaign</td>
+                            <td class="tx-right">N250,000</td>
+                          </tr>
+                          <tr>
+                            <td>Art Campaign</td>
+                            <td class="tx-right">N250,000</td>
+                          </tr>
+                          <tr>
+                            <td>Art Campaign</td>
+                            <td class="tx-right">N250,000</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-5 col-12 mg-md-t-0 mg-t-20">
+                <div class="d-flex justify-content-between mg-b-10">
+                  <p class="mg-b-0 pd-t-10">Payment History</p>
+                  <a href="" class="pd-t-10">View all transactions</a>
+                </div>
+                <div class="card bg-transparent card-height  bd-0">
+                  <div class="card">
+                    <div class="card-body pd-y-5">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <p class="mb-0">  Card Payment </p>
+                          <p class="tx-gray mb-0"> 22 Jun 2018</p>
+                        </div>
+                        <p class="tx-green-light pd-t-10">N100.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mg-t-10">
+                    <div class="card-body pd-y-5">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <p class="mb-0">  Card Payment </p>
+                          <p class="tx-gray mb-0"> 22 Jun 2018</p>
+                        </div>
+                        <p class="tx-green-light pd-t-10">N100.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mg-t-10">
+                    <div class="card-body pd-y-5">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <p class="mb-0">  Fund Wallet </p>
+                          <p class="tx-gray mb-0"> 22 Jun 2018</p>
+                        </div>
+                        <p class="tx-green-light pd-t-10">N100.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mg-t-10">
+                    <div class="card-body pd-y-5">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <p class="mb-0"> Fund Wallet </p>
+                          <p class="tx-gray mb-0"> 22 Jun 2018</p>
+                        </div>
+                        <p class="tx-green-light pd-t-10">N100.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!--fund Modal -->
+            <div class="modal fade" id="fundModal" tabindex="-1" aria-labelledby="fundModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header pd-md-x-30">
+                    <p class="tx-20 tx-bold modal-title" id="fundModalLabel">Add Fund</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body pd-md-x-30">
+                    <p class="tx-16">Select payment method</p>
+                    <form>
+                      <div class="custom-control custom-radio mg-t-20">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                        <label class="custom-control-label tx-blac" for="customRadio1">Card Payment</label>
+                      </div>
+                      
+                      <div class="custom-control custom-radio mg-t-20">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label tx-blac" for="customRadio2">Paystack</label>
+                      </div>
+                      
+                      <div class="custom-control custom-radio mg-t-20">
+                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label tx-blac" for="customRadio3">Flutterwave</label>
+                      </div>
+                      <div class="form-group mg-t-20">
+                        <label for="">Amount to add to your balance</label>
+                        <input type="text" class="form-control" placeholder="Enter amount (maximum #200,000 ; minimum #1,000)">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer bd-t-0 pd-md-x-30 pd-b-30">
+                    <a href="./home.html" type="button" class="btn btn-primary pd-x-40">Fund</a>
+
+                    <button type="button" class="btn btn-outline-primary pd-x-40" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script src="assets/lib/prismjs/prism.js"></script>
+    <script src="assets/lib/chart.js/Chart1.min.js"></script>
+    <script src="assets/lib/chart.js/utils.js"></script>
+    <script src="assets/lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="assets/lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="assets/js/dashforge.js"></script>
+    <script src="assets/js/dashforge.aside.js"></script>
+    <script src="assets/js/dashforge.sampledata.js"></script>
+
+    <!-- append theme customizer -->
+    <script src="assets/lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
+
+    <script>
+        $('#campaign').DataTable({
+          responsive: true,
+          language: {   
+            searchPlaceholder: 'Search...',
+            sSearch: '',
+            lengthMenu: '_MENU_ campaigns/page',
+          }
+        });   
+    </script>
+  </body>
+</html>
+   
