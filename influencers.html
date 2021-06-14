@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cloud - Interactive Associates">
+    <title>Cloud - Interactive Associates</title>
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/jqvmap/jqvmap.min.css" rel="stylesheet">
+
+    <link href="assets/lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="assets/lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Page CSS --> 
+    <link rel="stylesheet" href="assets/css/progress.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <aside class="aside aside-fixed">
+      <div class="aside-header">
+        <a href="dashboard.html" class="aside-logo">
+          <div class="pd-50">
+            <img src="./assets/img/logo.svg" class="img-fluid logo" alt="" srcset="">
+          </div>
+        </a>
+        <a href="" class="aside-menu-link">
+          <i data-feather="menu"></i>
+          <i data-feather="x"></i>
+        </a>
+      </div>
+      <div class="aside-body">
+        <ul class="nav nav-aside">
+          <!-- <li class="nav-label">Dashboard</li> -->
+          <li class="nav-item" >
+            <a href="" class="nav-link" data-toggle="modal" data-target="#homeModal"><i class="fa fa-home mr-3"></i> <span class="marine-active-menu">Home</span></a></li>
+
+          <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Dashboard</span></a></li>
+          <li class="nav-item active"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive mr-3"></i><span>Campaigns</span></a></li>
+          <li class="nav-item"><a href="./partner.html" class="nav-link"><i class="fa fa-handshake mr-3 tx-muted"></i><span>Partners</span></a></li>
+          <li class="nav-item"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
+          
+          <li class="nav-item"><a href="./setting.html" class="nav-link"><i class="fa fa-cog mr-3"></i><span>Settings</span></a></li>
+          
+        </ul>
+        
+      </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+      <div class="content-header shadow-dash bd-b-0">
+        <div class="content-search">
+          <i data-feather="search"></i>
+          <input type="search" class="form-control" placeholder="Search...">
+        </div>
+        <nav class="nav">
+          <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
+          <a href="" class="nav-link"><i data-feather="grid"></i></a>
+          <a href="" class="nav-link"><i data-feather="align-left"></i></a>
+        </nav>
+      </div><!-- content-header -->
+
+      <div class="content-body">
+        <div class="container pd-x-0">
+         <div class="row justify-content-between">
+           <div class="col-md-5 col-12 mg-b-20">
+             <p class="tx-20 mb-1">Influencers</p>
+             <p>Select your choice influencer to help promote your business</p>
+           </div>
+           <div class="col-md-5 col-12 mg-b-20">
+            <div class="d-flex float-md-right">
+              <div>
+                <div class="d-flex justify-content-end">
+                  <form id="searchExpanding" class="search-form search-form-expanding bd-0">
+                    <input type="search" class="form-control bd-0" placeholder="Search">
+                    <button class="btn bd-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                  </form><!-- search-form -->
+                </div>
+              </div>
+              <div>
+                <a href="./preview.html" class="btn btn-primary pd-x-50 mg-l-10">Proceed</a>
+              </div>
+              </div>
+             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck1">
+                  <label class="custom-control-label d-inline" for="customCheck1"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/wiz.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Wizkid</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">3 million - 6 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                
+                </div>
+                
+            </div>
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck6">
+                  <label class="custom-control-label d-inline" for="customCheck6"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/davido.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Davido</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">3 million - 6 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck7">
+                  <label class="custom-control-label d-inline" for="customCheck7"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/tiwa.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Tiwa</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">2 million - 4 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck2">
+                  <label class="custom-control-label d-inline" for="customCheck2"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/baba.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Tuface</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">3 million - 5 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck3">
+                  <label class="custom-control-label d-inline" for="customCheck3"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/baba.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Tuface</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">3 million - 5 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck4">
+                  <label class="custom-control-label d-inline" for="customCheck4"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/baba.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Tuface</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">3 million - 5 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck5">
+                  <label class="custom-control-label d-inline" for="customCheck5"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/tao.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Taooma</p>
+                        <p class="mb-1">Balance</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">1 million - 3million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck8">
+                  <label class="custom-control-label d-inline" for="customCheck8"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/syn.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Syndey</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">1 million - 3 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck9">
+                  <label class="custom-control-label d-inline" for="customCheck9"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/tiwa.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Tiwa</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">2 million - 4 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck12">
+                  <label class="custom-control-label d-inline" for="customCheck12"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/baba.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Tuface</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">3 million - 5 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck1">
+                  <label class="custom-control-label d-inline" for="customCheck1"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/wiz.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Wizkid</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">3 million - 6 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                
+                </div>
+                
+            </div>
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck1">
+                  <label class="custom-control-label d-inline" for="customCheck1"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/davido.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Davido</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">3 million - 6 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck1">
+                  <label class="custom-control-label d-inline" for="customCheck1"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/tiwa.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Tiwa</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">2 million - 4 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck5">
+                  <label class="custom-control-label d-inline" for="customCheck5"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/tao.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Taooma</p>
+                        <p class="mb-1">Balance</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">1 million - 3million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12 mg-b-20">
+              <div class="card card-body shadow-sm pd-12 card-height">
+                <div class="custom-control custom-checkbox pd-l-15"> 
+                  <input type="checkbox" class="custom-control-input pd-l-0 mg-l-0"  id="customCheck1">
+                  <label class="custom-control-label d-inline" for="customCheck1"  data-toggle="modal" data-target="#sideModal">
+                    <div class="d-flex">
+                      <div class="div pd-l-0">
+                        <div class="avatar avatar-xl"><img src="./assets/img/syn.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Syndey</p>
+                        <p class="mb-1">Artiste</p>
+                        <p class="mb-0 tx-12 tx-gray"><i class="fa fa-users wd-5 ht-5 mg-r-8"></i> <span class="tx-gray">1 million - 3 million</span></p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                </div>
+            </div>
+            
+          </div>
+      
+              <!--side Modal -->
+           <div class="modal right fade" id="sideModal" tabindex="-1" role="dialog" aria-labelledby="sideModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content  modal-side">
+                <div class="modal-header">
+                  <div>
+                    <div class="d-flex">
+                      <div class="div">
+                        <div class="avatar avatar-xl"><img src="./assets/img/wiz.jpeg" class="rounded-circle" alt=""></div>
+                      </div>
+                      <div class="mg-l-10">
+                        <p class="tx-bold mb-0">Wizkid</p>
+                        <p>Artiste</p>
+                        <p class="mb-0 tx-12"><i class="fa fa-users"></i> 3 million - 6 million</p>
+                      </div>
+                  </div>
+                  </div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                
+                <div class="modal-body pd-x-30">
+                 <p class="tx-18 tx-semibold">Select Platform</p>
+                 <div class="row justify content-between mg-b-15">
+                   <div class="col-5">
+                     <p>
+                      <i class="fa fa-instagram mg-r-5 social-media" aria-hidden="true"></i>
+                      Instagram
+                     </p>
+                   </div>
+                   <div class="col-7">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="instagram">
+                      <label class="custom-control-label" for="instagram">N250,000 per post</label>
+                    </div>
+                   </div>
+                 </div>
+                 <div class="row justify content-between mg-b-15">
+                  <div class="col-5">
+                    <p>
+                     <i class="fa fa-facebook-square mg-r-5 social-media" aria-hidden="true"></i>
+                     Facebook
+                    </p>
+                  </div>
+                  <div class="col-7">
+                   <div class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input" id="facebook">
+                     <label class="custom-control-label" for="facebook">N250,000 per post</label>
+                   </div>
+                  </div>
+                </div>
+                <div class="row justify content-between mg-b-15">
+                  <div class="col-5">
+                    <p>
+                     <i class="fa fa-twitter mg-r-5 social-media" aria-hidden="true"></i>
+                     Twitter
+                    </p>
+                  </div>
+                  <div class="col-7">
+                   <div class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input" id="twitter">
+                     <label class="custom-control-label" for="twitter">N250,000 per post</label>
+                   </div>
+                  </div>
+                </div>
+                <div class="row justify content-between mg-b-15">
+                  <div class="col-5">
+                    <p>
+                     <i class="fa fa-snapchat mg-r-5 social-media" aria-hidden="true"></i>
+                     Snapchat
+                    </p>
+                  </div>
+                  <div class="col-7">
+                   <div class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input" id="snapchat">
+                     <label class="custom-control-label" for="snapchat">N250,000 per post</label>
+                   </div>
+                  </div>
+                </div>
+                <div class="row justify content-between mg-b-15">
+                  <div class="col-5">
+                    <p>
+                      <i class="fas fa-bullhorn mg-r-5 social-media"></i>
+                     All
+                    </p>
+                  </div>
+                  <div class="col-7">
+                   <div class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input" id="all">
+                     <label class="custom-control-label" for="all">N250,000 per post</label>
+                   </div>
+                  </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary">Save Selection</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script src="assets/lib/prismjs/prism.js"></script>
+    <script src="assets/lib/chart.js/Chart1.min.js"></script>
+    <script src="assets/lib/chart.js/utils.js"></script>
+
+    <script src="assets/js/dashforge.js"></script>
+    <script src="assets/js/dashforge.aside.js"></script>
+    <script src="assets/js/dashforge.sampledata.js"></script>
+
+    <!-- append theme customizer -->
+    <script src="assets/lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
+
+    <script>
+      $('#searchExpanding button').on('click', function(e){
+  e.preventDefault()
+
+  if($(this).prev().val() === '') {
+    $(this).parent().toggleClass('expand');
+  } else {
+    $(this).parent().submit();
+  }
+})
+
+// Collapse expanding search
+$('#searchExpanding .form-control').on('focusout', function(e){
+  if($(this).val() === '') {
+    $(this).parent().removeClass('expand');
+  }
+})
+    </script>
+  </body>
+</html>
