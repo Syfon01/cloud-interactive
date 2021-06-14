@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cloud - Interactive Associates">
+    <title>Cloud - Interactive Associates</title>
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/jqvmap/jqvmap.min.css" rel="stylesheet">
+
+    <link href="assets/lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="assets/lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Page CSS --> 
+    <link rel="stylesheet" href="assets/css/progress.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <aside class="aside aside-fixed">
+      <div class="aside-header">
+        <a href="dashboard.html" class="aside-logo">
+          <div class="pd-50">
+            <img src="./assets/img/logo.svg" class="img-fluid logo" alt="" srcset="">
+          </div>
+        </a>
+        <a href="" class="aside-menu-link">
+          <i data-feather="menu"></i>
+          <i data-feather="x"></i>
+        </a>
+      </div>
+      <div class="aside-body">
+        <ul class="nav nav-aside">
+          <!-- <li class="nav-label">Dashboard</li> -->
+          <li class="nav-item" >
+            <a href="" class="nav-link" data-toggle="modal" data-target="#homeModal"><i class="fa fa-home mr-3"></i> <span class="marine-active-menu">Home</span></a></li>
+
+          <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Dashboard</span></a></li>
+          <li class="nav-item active"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive mr-3"></i><span>Campaigns</span></a></li>
+          <li class="nav-item"><a href="./partner.html" class="nav-link"><i class="fa fa-handshake mr-3 tx-muted"></i><span>Partners</span></a></li>
+          <li class="nav-item"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
+          
+          <li class="nav-item"><a href="./setting.html" class="nav-link"><i class="fa fa-cog mr-3"></i><span>Settings</span></a></li>
+          
+        </ul>
+        
+      </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+      <div class="content-header shadow-dash bd-b-0">
+        <div class="content-search">
+          <i data-feather="search"></i>
+          <input type="search" class="form-control" placeholder="Search...">
+        </div>
+        <nav class="nav">
+          <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
+          <a href="" class="nav-link"><i data-feather="grid"></i></a>
+          <a href="" class="nav-link"><i data-feather="align-left"></i></a>
+        </nav>
+      </div><!-- content-header -->
+
+      <div class="content-body bg-white">
+        <div class="container pd-x-0">
+          <p class="tx-18 tx-semibold">Make Payment</p>
+          <p>Please make payment and provide details to do that</p>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Pay with card</button>
+            <button type="button" class="btn btn-light">Pay with wallet</button>
+          </div>
+
+          <div class="row my-2 justify-content-between">
+            <div class="col-md-5 mg-t-20">
+              <form action="">
+                <div class="form-group">
+                  <label for="" class="mb-1"> Card Name</label>
+                  <input type="text" class="form-control" placeholder="Enter card Name">
+                </div>
+                <div class="form-group">
+                  <label for="" class="mb-1"> Card Number</label>
+                  <input type="number" class="form-control" placeholder="Enter card Number">
+                </div>
+                <div class="form-group">
+                  <label for="" class="mb-1"> Card Type</label>
+                  <select class="custom-select">
+                    <option selected>Select Card Type</option>
+                    <option value="1">Master card</option>
+                    <option value="2">Verve</option>
+                    <option value="3">Visa</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="" class="mb-1"> Cvv</label>
+                  <input type="text" class="form-control" placeholder="Enter card Cvv">
+                </div>
+                <div class="form-group">
+                  <label for="" class="mb-1"> Expiry Date</label>
+                  <input type="date" class="form-control" placeholder="">
+                </div>
+                
+              </form>
+            </div>
+            <div class="col-md-6  mg-t-20">
+              <div class="card modal-side">
+                <div class="card-body pd-md-30">
+                  <p class="tx-18 tx-medium">Card details</p>
+                  <div class="row">
+                    <div class="col-md-6 mg-b-20 col-6">
+                      <label for="" class="tx-gray mb-1">Card Name</label>
+                      <p class="mb-0">Olumide Seyi</p>
+                    </div>
+                    <div class="col-md-6 mg-b-20 col-6">
+                      <label for="" class="tx-gray mb-1">Card Type</label>
+                      <p class="mb-0">Master Card</p>
+                    </div>
+                    <div class="col-md-6 mg-b-20 col-6">
+                      <label for="" class="tx-gray mb-1">Card Number</label>
+                      <p class="mb-0">998-5793-6784-7849</p>
+                    </div>
+                    <div class="col-md-6 mg-b-20 col-6">
+                      <label for="" class="tx-gray mb-1">Expiry Date</label>
+                      <p class="mb-0">22/04/2023</p>
+                    </div>
+                    <div class="col-md-6 mg-b-20 col-6">
+                      <label for="" class="tx-gray mb-1">Status</label>
+                      <p class="mb-0">Active</p>
+                    </div>
+                    <div class="col-md-6 mg-b-20 col-6">
+                      <label for="" class="tx-gray mb-1">Cvv</label>
+                      <p class="mb-0">981</p>
+                    </div>
+                    <div class="col-md-6 col-6">
+                      <button type="button" class="btn btn-primary pd-x-30">Pay</button>
+                    </div>
+                    <div class="col-md-6 col-6">
+                      <div class="custom-control custom-switch mg-t-10">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Save details for later</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script src="assets/lib/prismjs/prism.js"></script>
+    <script src="assets/lib/chart.js/Chart1.min.js"></script>
+    <script src="assets/lib/chart.js/utils.js"></script>
+
+    <script src="assets/js/dashforge.js"></script>
+    <script src="assets/js/dashforge.aside.js"></script>
+    <script src="assets/js/dashforge.sampledata.js"></script>
+
+    <!-- append theme customizer -->
+    <script src="assets/lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
+
+  </body>
+</html>
