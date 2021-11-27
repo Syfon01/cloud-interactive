@@ -141,6 +141,7 @@
                       </div>
                     </div>
 
+                   
                     <div id="show_1">
                       <div class="row justify-content-md-between">
                         <div class="form-group col-md-6">
@@ -286,15 +287,16 @@
           allowClear: true
         });
 
+      
       });
 
-      
     </script>
     <script>
-      function switch_div(show) {  
-              document.getElementById("show_"+show).style.display = "block";
-              document.getElementById("show_"+((show==1)?2:1)).style.display = "none";
-            } 
-        </script>
+  function switch_div(show) {  
+          document.getElementById("show_"+show).style.display = "block";
+          document.getElementById("show_"+((show==1)?2:1)).style.display = "none";
+        } 
+    </script>
+   
   </body>
 </html>
