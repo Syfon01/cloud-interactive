@@ -29,12 +29,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-
     <aside class="aside aside-fixed">
       <div class="aside-header">
         <a href="dashboard.html" class="aside-logo">
           <div class="pd-50">
-            <img src="./assets/img/logo.svg" class="img-fluid logo" alt="" srcset="">
+            <img src="./assets/img/logo.png" class="img-fluid logo" alt="" srcset="">
           </div>
         </a>
         <a href="" class="aside-menu-link">
@@ -43,20 +42,15 @@
         </a>
       </div>
       <div class="aside-body">
-        <ul class="nav nav-aside">
-          <!-- <li class="nav-label">Dashboard</li> -->
-          <li class="nav-item" >
-            <a href="" class="nav-link" data-toggle="modal" data-target="#homeModal"><i class="fa fa-home mr-3"></i> <span class="marine-active-menu">Home</span></a></li>
-
-          <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Dashboard</span></a></li>
-          <li class="nav-item active"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive mr-3"></i><span>Campaigns</span></a></li>
-          <li class="nav-item"><a href="./partner.html" class="nav-link"><i class="fa fa-handshake mr-3 tx-muted"></i><span>Partners</span></a></li>
-          <li class="nav-item"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
-          
-          <li class="nav-item"><a href="./setting.html" class="nav-link"><i class="fa fa-cog mr-3"></i><span>Settings</span></a></li>
-          
-        </ul>
         
+        <ul class="nav nav-aside">
+          <li class="nav-item active"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive mr-3"></i><span>Campaigns</span></a></li>
+          <li class="nav-item"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
+          <li class="nav-item"><a href="./sender.html" class="nav-link"><i class="fa fa-user mr-3 tx-muted"></i><span>Sender ID</span></a></li>
+          <li class="nav-item"><a href="./setting.html" class="nav-link"><i class="fa fa-cog mr-3"></i><span>Settings</span></a></li>
+          <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Analytics</span></a></li>
+        </ul>
+                
       </div>
     </aside>
 
@@ -67,28 +61,111 @@
           <input type="search" class="form-control" placeholder="Search...">
         </div>
         <nav class="nav">
-          <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
-          <a href="" class="nav-link"><i data-feather="grid"></i></a>
-          <a href="" class="nav-link"><i data-feather="align-left"></i></a>
+          
+          <div class=" ml-md-4 ml-2 mg-t-5">
+            <div class="d-flex">
+              <div>
+              <a href="./wallet.html" class="tx-semibold tx-orange pd-t-1 mg-r-5" style="text-decoration: underline;">Fund wallet</a> 
+              </div>
+              <div>
+                <span class="mg-l-3 tx-14 tx-medium ">
+                  <img src="./assets/img/campaign.svg" alt="" srcset="">
+                  Balance:N50,000
+                </span>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-profile ml-md-4 ml-2">
+            <a href="" class="dropdown-link tx-dark tx-13 tx-medium" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+            <span class="d-none d-md-block"> John Doe</span> 
+              <div class="avatar avatar-sm mg-l-10"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+            </a><!-- dropdown-link -->
+            <div class="dropdown-menu dropdown-menu-right tx-13">
+              <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+              <h6 class="tx-semibold mg-b-5">Katherine Pechon</h6>
+              <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+  
+              <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+              <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+              <div class="dropdown-divider"></div>
+              <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
+              <a href="" class="dropdown-item"><i data-feather="life-buoy"></i> Forum</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
+              <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+            </div><!-- dropdown-menu -->
+          </div>
         </nav>
+        
       </div><!-- content-header -->
 
       <div class="content-body">
         <div class="container pd-x-0">
-          <p class="tx-18 tx-semibold">Selection Preview</p>
-          <div class="card">
-            <div class="card-body">
+          <p class="tx-24 tx-bold tx-com">Selection Preview</p>
+          <div class="card bd-0 rounded shadow-sm">
+            <div class="card-body pd-md-x-30">
+              <div class="col-xl-11 mx-auto">
+                <div class="row justify-content-between">
+                  <div class="col-md-8">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <p class="tx-18 mb-0 tx-bold tx-com">Campaign</p>
+                      </div>
+                      <div>
+                        <div class="d-flex pd-t-3">
+                          <div>
+                            <i class="fa fa-edit tx-primary mg-r-5"></i>
+                          </div>
+                          <p class="mb-0">Edit</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mg-t-15">
+                      <div class="form-group col-md-3">
+                        <label for="" class="tx-14 tx-gray mb-0 tx-medium">Instagram</label>
+                        <p class="tx-14 mb-0">@annemay</p>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="" class="tx-14 tx-gray mb-0 tx-medium">Twitter</label>
+                        <p class="tx-14 mb-0">@annemay</p>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="" class="tx-14 tx-gray mb-0 tx-medium">Campaign Message</label>
+                        <p class="tx-14 mb-0">Buy one get one free on the new way to trade bitcoin. A most</p>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="" class="tx-14 tx-gray mb-0 tx-medium">Facebook</label>
+                        <p class="tx-14 mb-0">Anne Mary</p>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="" class="tx-14 tx-gray mb-0 tx-medium">Snapchat</label>
+                        <p class="tx-14 mb-0">@annemay</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <p class="tx-18 mb-0 tx-bold tx-com">Preview</p>
+
+                    <div>
+                      <img src="./assets/img/create_ads_illustration.svg" class="img-fluid" alt="" srcset="">
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="table-responsive">
-                <table class="table" id="campaig">
+                <table class="table inf-table" id="campaig">
                   <thead class="tx-uppercase tx-medium">
                     <tr>
                       <th scope="col">Influencer</th>
                       <th scope="col">Instagram</th>
+                      <th scope="col">Snapchat</th>
                       <th scope="col">Twitter</th>
                       <th scope="col">Facebook</th>
-                      <th scope="col">Snapchat</th>
                       <th scope="col">All</th>
                       <th scope="col" class="tx-right">Total Amount</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -109,6 +186,14 @@
                       <td class="">N250,000</td>
                       <td class="">-</td>
                       <td class="tx-right">N750,000</td>
+                      <td>
+                        <div class="d-flex pd-t-3">
+                        <div>
+                          <i class="fa fa-edit tx-primary mg-r-5 tx-semibold"></i>
+                        </div>
+                        <p class="mb-0">Edit</p>
+                      </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>
@@ -127,6 +212,14 @@
                       <td class="">N250,000</td>
                       <td class="">-</td>
                       <td class="tx-right">N500,000</td>
+                      <td>
+                        <div class="d-flex pd-t-3">
+                        <div>
+                          <i class="fa fa-edit tx-primary mg-r-5 tx-semibold"></i>
+                        </div>
+                        <p class="mb-0">Edit</p>
+                      </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>
@@ -145,11 +238,19 @@
                       <td class="">N250,000</td>
                       <td class="">-</td>
                       <td class="tx-right">N1,000,000</td>
+                      <td>
+                        <div class="d-flex pd-t-3">
+                        <div>
+                          <i class="fa fa-edit tx-primary mg-r-5 tx-semibold"></i>
+                        </div>
+                        <p class="mb-0">Edit</p>
+                      </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
                 <div class="col-md-5 col-12 offset-md-7 pd-md-x-0">
-                  <div class="card card-body bg-pink bd-0">
+                  <div class="card card-body bg-pink bd-0 rounded">
                     <div class="row">
                       <div class="col-6">
                         <p class="mb-0 tx-right">Total Amount</p>
@@ -163,10 +264,64 @@
               </div>
 
               <div class="card-footer mg-t-30 bd-t-0">
-                <a href="./payment.html" class="btn btn-primary">Proceed to Pay</a>
+                <button type="button"  class="btn btn-primary pd-x-40 tx-com mg-r-15" data-toggle="modal" data-target="#assignModal">Assign To</button>
                 <a href="./influencers.html" class="btn btn-outline-primary pd-x-30">Go Back</a>
               </div>
               
+
+               <!--Assign  Modal -->
+            <div class="modal fade" id="assignModal" tabindex="-1" aria-labelledby="assignModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content pd-md-x-30 pd-x-20 pd-y-20">
+                  <div class="modal-header bd-b-0">
+                    <p class="tx-20 tx-bold tx-com modal-title" id="assignModalLabel">Assign User</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label class="d-block tx-14 tx-com">Select User from:</label>
+                      <select class="custom-select">
+                        <option selected>Enter User</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                   
+                  </div>
+                  <div class="modal-footer bd-t-0 col-md-10">
+                   <button type="button" class="btn btn-primary w-100" data-toggle="modal" data-target="#successModal" data-dismiss="modal">Proceed</button>
+
+                    <button type="button" class="btn btn-outline-primary w-100" data-dismiss="modal">Cancel</button>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <!--Success  Modal -->
+              <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="assignModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-smm">
+                  <div class="modal-content pd-md-x-30 pd-x-20 pd-y-20">
+                    <div class="modal-header bd-b-0">
+                     
+                    </div>
+                    <div class="modal-body tx-center pd-x-10">
+                      <div class="form-group">
+                        <img src="./assets/img/Check.svg" class="img-fluid wd-100 ht-100" alt="" srcset="">
+                        <p class="tx-26 tx-com tx-bold">Successful</p>
+                       <p class="tx-16 mb-0">User will be notified of the campaign creation Within the hour</p>
+                     </div>
+                    </div>
+                    <div class="tx-center bd-t-0 pd-b-30">
+                      <a href="./campaign.html" type="button" class="btn btn-primary w-50" data-dismiss="modal">Go to Campaigns</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           </div>

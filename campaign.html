@@ -44,17 +44,11 @@
       </div>
       <div class="aside-body">
         <ul class="nav nav-aside">
-          <!-- <li class="nav-label">Dashboard</li> -->
-          <li class="nav-item" >
-            <a href="" class="nav-link" data-toggle="modal" data-target="#homeModal"><i class="fa fa-home mr-3"></i> <span class="marine-active-menu">Home</span></a></li>
-
-          <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Dashboard</span></a></li>
           <li class="nav-item active"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive mr-3"></i><span>Campaigns</span></a></li>
-          <li class="nav-item"><a href="./partner.html" class="nav-link"><i class="fa fa-handshake mr-3 tx-muted"></i><span>Partners</span></a></li>
           <li class="nav-item"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
-          
+          <li class="nav-item"><a href="./sender.html" class="nav-link"><i class="fa fa-user mr-3 tx-muted"></i><span>Sender ID</span></a></li>
           <li class="nav-item"><a href="./setting.html" class="nav-link"><i class="fa fa-cog mr-3"></i><span>Settings</span></a></li>
-          
+          <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Analytics</span></a></li>
         </ul>
         
       </div>
@@ -67,44 +61,73 @@
           <input type="search" class="form-control" placeholder="Search...">
         </div>
         <nav class="nav">
-          <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
-          <a href="" class="nav-link"><i data-feather="grid"></i></a>
-          <a href="" class="nav-link"><i data-feather="align-left"></i></a>
+          
+          <div class=" ml-md-4 ml-2 mg-t-5">
+            <div class="d-flex">
+              <div>
+              <a href="./wallet.html" class="tx-semibold tx-orange pd-t-1 mg-r-5" style="text-decoration: underline;">Fund wallet</a> 
+              </div>
+              <div>
+                <span class="mg-l-3 tx-14 tx-medium ">
+                  <img src="./assets/img/campaign.svg" alt="" srcset="">
+                  Balance:N50,000
+                </span>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-profile ml-md-4 ml-2">
+            <a href="" class="dropdown-link tx-dark tx-13 tx-medium" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+            <span class="d-none d-md-block"> John Doe</span> 
+              <div class="avatar avatar-sm mg-l-10"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+            </a><!-- dropdown-link -->
+            <div class="dropdown-menu dropdown-menu-right tx-13">
+              <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+              <h6 class="tx-semibold mg-b-5">Katherine Pechon</h6>
+              <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+  
+              <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+              <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+              <div class="dropdown-divider"></div>
+              <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
+              <a href="" class="dropdown-item"><i data-feather="life-buoy"></i> Forum</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
+              <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+            </div><!-- dropdown-menu -->
+          </div>
         </nav>
+        
       </div><!-- content-header -->
 
       <div class="content-body">
         <div class="container pd-x-0">
          
-              <p class="mg-b-0 tx-26 tx-bold">Hello <span class="tx-primary">Olatomiwa,</span> what would you like to do?</p>
+              <p class="mg-b-0 tx-26 tx-bold tx-com">Hello <span class="">Olatomiwa,</span> what would you like to do?</p>
               <div class="row justify-content-between">
                 <div class="col-md-6 col-12">
-                  <p class="tx-14">Select any of the options to proceed</p>
-                </div>
-                <div class="col-md-2 col-12">
-                  <p>
-                    <a href="./view-campaigns.html" class="tx-un"> View All Campaigns</a>
-                  </p>
+                  <p class="tx-14 mg-b-30 tx-gray tx-medium">Select any of the options to proceed</p>
                 </div>
               </div>
 
               <div id="myCard">
-                <div class="card card-active" onclick="firstImage()">
+                <div class="card" onclick="secondImage()">
                   <div class="card-body">
                     <i data-feather="check-circle" class="check"></i>
                     <div class="row">
                       <div class="col-md-2 col-lg-2 col-2 mg-t-20 tx-center">
                         <img src="./assets/img/Create_Campaign.svg" class="img-fluid pd-md-t-40 pd-t-20" alt="" srcset="">
                       </div>
-                      <div class="col-md-5 col-10 mg-t-20 pd-md-b-40">
-                        <p class="tx-24 tx-bold mb-4">Create an Ad Campaign</p>
-                        <p class="tx-14">Tap into Airtel’s massive and diverse customer base to market your product and offers.</p>
-                        <a href="./create-campaign.html" class="btn btn-primary pd-x-40">Create</a>
+                      <div class="col-md-5 col-10 mg-t-20 pd-md-b-40 disabler">
+                        <p class="tx-24 tx-bold mb-4 tx-com">Create an Ad Campaign</p>
+                        <p class="tx-14 col-md-10 pd-x-0">Create New Ad to tap into our massive and diverse customer base to market your product and offers.</p>
+                        <a href="./create-campaign.html" class="btn btn-primary pd-x-40">Get Started</a>
                       </div>
                    <div class="col-md-5 d-md-block d-xl-block d-lg-block d-none">
                     <div class="neg-div">
-                      <img src="./assets/img/create_ads_illustration.svg" id="firstImg" class="img-fluid" alt="" srcset="">
-                      <img src="./assets/img/become_partners_illustration.svg" id="secondImg" class="img-fluid mg-t-100" alt="" srcset="">
+                      <img src="./assets/img/create_ads_illustration.svg" id="secondImg" class="img-fluid" alt="" srcset="">
+                      <img src="./assets/img/become_partners_illustration.svg" id="firstImg" class="img-fluid mg-t-100" alt="" srcset="">
                     </div>
                    </div>
                   </div>
@@ -112,7 +135,7 @@
                   </div>
                 </div>
                 
-                <div class="card mt-3" onclick="secondImage()">
+                <div class="card mg-t-40 card-active" onclick="firstImage()">
                   <div class="card-body">
                     <i data-feather="check-circle" class="check"></i>
                     <div class="row">
@@ -120,9 +143,9 @@
                         <img src="./assets/img/Become_partner.svg" class="img-fluid pd-md-t-40 pd-t-20" alt="" srcset="">
                       </div>
                       <div class="col-md-5 col-10 mg-t-20 pd-md-b-40">
-                        <p class="tx-24 tx-bold mb-4">Become Partners</p>
-                        <p class="tx-14">Tap into Airtel’s massive and diverse customer base to market your product and offers.</p>
-                        <a href="" class="btn btn-primary pd-x-30">Get Started</a>
+                        <p class="tx-24 tx-bold mb-4 tx-com">All Campaigns</p>
+                        <p class="tx-14 tx-blac col-md-9 pd-x-0">Tap into Mysogi massive and diverse customer base to market your product and offers.</p>
+                        <a href="./all-campaigns.html" class="btn btn-primary pd-x-30">All Campaigns</a>
                       </div>
                    </div>
                   </div>
@@ -179,7 +202,7 @@
 
         for (let i = 0; i < cards.length; i++) {
           cards[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("card-active");
+            let current = document.getElementsByClassName("card-active");
             current[0].className = current[0].className.replace(" card-active", "");
             this.className += " card-active";
           });
