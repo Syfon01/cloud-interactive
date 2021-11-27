@@ -282,12 +282,14 @@
                   <div class="modal-body">
                     <div class="form-group">
                       <label class="d-block tx-14 tx-com">Select User from:</label>
-                      <select class="custom-select">
-                        <option selected>Enter User</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                      <select id="User" class="form-control">
+                        <option value=""></option>
+                        <option value="1">Basey Boss</option>
+                        <option value="2">Lanre Sheriff</option>
+                        <option value="3">Davido Wiz</option>
+                        
+                    </select>
+                     
                     </div>
                    
                   </div>
@@ -332,37 +334,22 @@
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/lib/feather-icons/feather.min.js"></script>
-    <script src="assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-
-    <script src="assets/lib/prismjs/prism.js"></script>
-    <script src="assets/lib/chart.js/Chart1.min.js"></script>
-    <script src="assets/lib/chart.js/utils.js"></script>
-
     <script src="assets/js/dashforge.js"></script>
     <script src="assets/js/dashforge.aside.js"></script>
-    <script src="assets/js/dashforge.sampledata.js"></script>
 
     <!-- append theme customizer -->
-    <script src="assets/lib/js-cookie/js.cookie.js"></script>
-    <script src="assets/js/dashforge.settings.js"></script>
+    <script src="/assets/lib/select2/js/select2.min.js"></script>
+    <script src="/assets/lib/select2/js/select2-search.js"></script>
 
     <script>
-      $('#searchExpanding button').on('click', function(e){
-  e.preventDefault()
-
-  if($(this).prev().val() === '') {
-    $(this).parent().toggleClass('expand');
-  } else {
-    $(this).parent().submit();
-  }
-})
-
-// Collapse expanding search
-$('#searchExpanding .form-control').on('focusout', function(e){
-  if($(this).val() === '') {
-    $(this).parent().removeClass('expand');
-  }
-})
+    $(document).ready(function() {
+          $('#User').select2({
+          width: '100%', 
+          placeholder: 'Enter User',
+          searchInputPlaceholder: 'Type for quick search',
+          dropdownParent: $("#assignModal")
+        });
+    });
     </script>
   </body>
 </html>
