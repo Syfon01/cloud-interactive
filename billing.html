@@ -31,12 +31,11 @@
 
   </head>
   <body>
-
     <aside class="aside aside-fixed">
       <div class="aside-header">
         <a href="dashboard.html" class="aside-logo">
           <div class="pd-50">
-            <img src="./assets/img/logo.svg" class="img-fluid logo" alt="" srcset="">
+            <img src="./assets/img/logo.png" class="img-fluid logo" alt="" srcset="">
           </div>
         </a>
         <a href="" class="aside-menu-link">
@@ -47,19 +46,13 @@
       <div class="aside-body">
         
         <ul class="nav nav-aside">
-          <!-- <li class="nav-label">Dashboard</li> -->
-          <li class="nav-item" >
-            <a href="" class="nav-link" data-toggle="modal" data-target="#fundModal"><i class="fa fa-home mr-3"></i> <span >Home</span></a></li>
-
-          <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span >Dashboard</span></a></li>
-          <li class="nav-item"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive mr-3"></i><span>Campaigns</span></a></li>
-          <li class="nav-item"><a href="./partner.html" class="nav-link"><i class="fa fa-handshake mr-3 tx-muted"></i><span>Partners</span></a></li>
-          <li class="nav-item active"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
-          
+          <li class="nav-item active"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive  mr-3"></i><span>Campaigns</span></a></li>
+          <li class="nav-item"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
+          <li class="nav-item"><a href="./sender.html" class="nav-link"><i class="fa fa-user mr-3 tx-muted"></i><span>Sender ID</span></a></li>
           <li class="nav-item"><a href="./setting.html" class="nav-link"><i class="fa fa-cog mr-3"></i><span>Settings</span></a></li>
-          
+          <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Analytics</span></a></li>
         </ul>
-               
+                
       </div>
     </aside>
 
@@ -70,23 +63,58 @@
           <input type="search" class="form-control" placeholder="Search...">
         </div>
         <nav class="nav">
-          <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
-          <a href="" class="nav-link"><i data-feather="grid"></i></a>
-          <a href="" class="nav-link"><i data-feather="align-left"></i></a>
+          
+          <div class=" ml-md-4 ml-2 mg-t-5">
+            <div class="d-flex">
+              <div>
+              <a href="./wallet.html" class="tx-semibold tx-orange pd-t-1 mg-r-5" style="text-decoration: underline;">Fund wallet</a> 
+              </div>
+              <div>
+                <span class="mg-l-3 tx-14 tx-medium ">
+                  <img src="./assets/img/campaign.svg" alt="" srcset="">
+                  Balance:N50,000
+                </span>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-profile ml-md-4 ml-2">
+            <a href="" class="dropdown-link tx-dark tx-13 tx-medium" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+            <span class="d-none d-md-block"> John Doe</span> 
+              <div class="avatar avatar-sm mg-l-10"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+            </a><!-- dropdown-link -->
+            <div class="dropdown-menu dropdown-menu-right tx-13">
+              <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+              <h6 class="tx-semibold mg-b-5">Katherine Pechon</h6>
+              <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+  
+              <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+              <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+              <div class="dropdown-divider"></div>
+              <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
+              <a href="" class="dropdown-item"><i data-feather="life-buoy"></i> Forum</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
+              <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+            </div><!-- dropdown-menu -->
+          </div>
         </nav>
+        
       </div><!-- content-header -->
+
 
       <div class="content-body">
         <div class="container pd-x-0">
             <div class="row justify-content-between">
               <div class="col-md-6 col-12">
-                <p class="mg-b-0 tx-26 tx-bold">Billing Overview</p>
+                <p class="tx-26 tx-bold">Billing Overview</p>
               </div>
             </div>
 
             <div class="row">
               <div class="col-md-7 col-12">
-                <div class="card">
+                <div class="card rounded bd-0 shadow-sm">
                   <div class="card-body">
                     <p class="tx-18">Billing Information</p>
                     <div class="row">
@@ -106,14 +134,14 @@
                           <p class="tx-16 mb-1">Invoice</p>
                           <p class="tx-12 tx-blac">Your next invoice will be ready on 12th Sept. 2021</p>
                           <div class="d-flex">
-                            <select class="custom-select mg-r-10">
+                            <select class="col-7 custom-select mg-r-10">
                               <option selected>August 2021</option>
                               <option value="1">August 2021</option>
                               <option value="2">October 2021</option>
                               <option value="3">March 2021</option>
                             </select>
 
-                            <select class="custom-select">
+                            <select class="w-100 custom-select">
                               <option selected>PDF</option>
                               <option value="1">PDF</option>
                               <option value="2">CSV</option>
@@ -129,7 +157,7 @@
                 </div>
               </div>
               <div class="col-md-5 col-12 mg-t-20 mg-md-t-0">
-                <div class="card card-height">
+                <div class="card card-height rounded bd-0 shadow-sm">
                   <div class="card-body">
                     <p class="tx-18">Preferences</p>
                     <p class="tx-16">Service Address (for taxation purposes)</p>
@@ -142,30 +170,30 @@
             </div>
 
             
-            <div class="row mg-t-20">
+            <div class="row mg-t-30">
               <div class="col-md-7 col-12">
                 <div class="row justify-content-between">
                   <div class="col-md-4 col-12">
                     <p class="mg-md-b-0 pd-t-10">Usauge Summary</p>
                   </div>
-                  <div class="col-md-4 col-12">   
+                  <div class="col-md-5 col-12">   
                     <div class="d-flex">
-                      <select class="custom-select col-7">
+                      <select class="col-8 custom-select col-7">
                         <option selected>August 2021</option>
                         <option value="1">August 2021</option>
                         <option value="2">October 2021</option>
                         <option value="3">March 2021</option>
                       </select>
                     <p class="mg-b-10 ml-auto pd-t-10">
-                      <a href="" class="">View all</a>
+                      <a href="" class="tx-primary tx-medium">View All</a>
                     </p>
                     </div>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card rounded bd-0 shadow-sm">
                   <div class="card-body">
                     <div class="table-responsive">
-                      <table class="table" id="campaig">
+                      <table class="table table-borderless" id="campaig">
                         <thead class="tx-uppercase tx-medium">
                           <tr>
                             <th scope="col">Product</th>
@@ -205,11 +233,11 @@
               
               <div class="col-md-5 col-12 mg-md-t-0 mg-t-20">
                 <div class="d-flex justify-content-between mg-b-10">
-                  <p class="mg-b-0 pd-t-10">Payment History</p>
-                  <a href="" class="pd-t-10">View all transactions</a>
+                  <p class="mg-b-0 pd-t-10 tx-medium">Payment History</p>
+                  <a href="" class="pd-t-10 tx-primary tx-medium">View all transactions</a>
                 </div>
                 <div class="card bg-transparent card-height  bd-0">
-                  <div class="card">
+                  <div class="card rounded bd-0 shadow-sm">
                     <div class="card-body pd-y-5">
                       <div class="d-flex justify-content-between">
                         <div>
@@ -220,7 +248,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card mg-t-10">
+                  <div class="card mg-t-10 rounded bd-0 shadow-sm">
                     <div class="card-body pd-y-5">
                       <div class="d-flex justify-content-between">
                         <div>
@@ -231,7 +259,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card mg-t-10">
+                  <div class="card mg-t-10 rounded bd-0 shadow-sm">
                     <div class="card-body pd-y-5">
                       <div class="d-flex justify-content-between">
                         <div>
@@ -242,7 +270,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card mg-t-10">
+                  <div class="card mg-t-10 rounded bd-0 shadow-sm">
                     <div class="card-body pd-y-5">
                       <div class="d-flex justify-content-between">
                         <div>
@@ -253,6 +281,7 @@
                       </div>
                     </div>
                   </div>
+                  
                   
                 </div>
               </div>
