@@ -49,9 +49,9 @@
         <ul class="nav nav-aside">
           <li class="nav-item"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive mr-3"></i><span>Campaigns</span></a></li>
           <li class="nav-item"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
-          <li class="nav-item  active"><a href="./sender.html" class="nav-link"><i class="fa fa-user mr-3 tx-muted"></i><span>Sender ID</span></a></li>
+          <li class="nav-item"><a href="./sender.html" class="nav-link"><i class="fa fa-user mr-3 tx-muted"></i><span>Sender ID</span></a></li>
           <li class="nav-item"><a href="./setting.html" class="nav-link"><i class="fa fa-cog mr-3"></i><span>Settings</span></a></li>
-          <li class="nav-item"><a href="./analytics.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Analytics</span></a></li>
+          <li class="nav-item active"><a href="./analytics.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Analytics</span></a></li>
         </ul>
                 
       </div>
@@ -110,16 +110,12 @@
               
               <div class="row justify-content-between">
                 <div class="col-md-6 col-6">
-                  <p class="mg-b-0 tx-26 tx-bold">Sender ID</p>
+                  <p class="mg-b-15 tx-26 tx-bold">Analytics</p>
                 </div>
-                <div class="col-md-2 col-6">
-                  <p>
-                    <a href="./create-campaign.html" class="btn btn-primary w-100"> New Sender ID</a>
-                  </p>
-                </div>
+                
               </div>
 
-            <div class="card card rounded bd-0 shadow-sm">
+            <div class="card rounded bd-0 shadow-sm">
               <div class="card-header bd-b-0 pd-b-0 pd-t-40 pd-md-x-30">
                 <div class="">
                     <div class="row justify-content-between">
@@ -190,108 +186,116 @@
                 <thead class="tx-uppercase">
                   <tr>
                     <th scope="col"></th>
-                    <th scope="col">USER</th>
-                    <th scope="col">SENDER ID</th>
-                    <th scope="col">DATE REQUESTED</th>
+                    <th scope="col">Campaign Name</th>
+                    <th scope="col">AD Type</th>
+                    <th scope="col">Revenue</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Date Generated</th>
                     <th scope="col">Status</th>
-                    <th scope="col">ACTIONS</th>
+                    <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck11">
-                        <label class="custom-control-label" for="customCheck11">
-                        <div class="avatar avatar-sm"><img src="./assets/img/staff.png" class="rounded-circle" alt=""></div>
-
-                        </label>
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1"></label>
                       <div>
 
                     </th>
-                    <td>Nichole Williams</td>
-                    <td>SterlingX</td>
-                    <td>01 Mar 2021</td>
-                    
-                    <td><span class="badge badge-active tx-14">Approved</span> </td>
+                    <td>Art Campaign</td>
+                    <td>Video</td>
+                    <td>#0.00</td>
+                    <td>#0.00</td>
+                    <td>01 Mar, 2021</td>
+                    <td><span class="badge badge-active tx-14">Active</span> </td>
                     <td>
-                      <div class="dropdown">
-                        <span class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </span>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="./view-sender.html"> <i data-feather="eye" class="favourite-icon mr-2 wd-15 ht-15"></i>View</a>
-                          <a class="dropdown-item" href=""> <i data-feather="edit" class="favourite-icon mr-2 wd-15 ht-15"></i>Edit</a>
-                          <a class="dropdown-item" href="#"><i data-feather="trash-2" class="favourite-icon mr-2 wd-15 ht-15"></i>Delete</a>
-                        </div>
-                      </div>
+                      <a href="./view-analytics.html" class="tx-14 tx-red" style="text-decoration: underline;">
+                        View Analytics
+                      </a>
                     </td>
                   </tr>
                   <tr>
                     <th scope="row">
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck12">
-                        <label class="custom-control-label" for="customCheck12">
-                        <div class="avatar avatar-sm"><img src="./assets/img/staff.png" class="rounded-circle" alt=""></div>
-
-                        </label>
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2"></label>
                       <div>
 
                     </th>
-                    <td>Segun Bakare</td>
-                    <td>UBA</td>
-                    <td>01 Mar 2021</td>
-                    
-                    <td><span class="badge badge-pink tx-14">Pending</span> </td>
+                    <td>Enterprise Table</td>
+                    <td>Audio</td>
+                    <td>#0.00</td>
+                    <td>#0.00</td>
+                    <td>01 Mar, 2021</td>
+                    <td><span class="badge badge-pink tx-14"> Closed</span> </td>
                     <td>
-                      <div class="dropdown">
-                        <span class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </span>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="./view-sender.html"> <i data-feather="eye" class="favourite-icon mr-2 wd-15 ht-15"></i>View</a>
-                          <a class="dropdown-item" href=""> <i data-feather="edit" class="favourite-icon mr-2 wd-15 ht-15"></i>Edit</a>
-                          <a class="dropdown-item" href="#"><i data-feather="trash-2" class="favourite-icon mr-2 wd-15 ht-15"></i>Delete</a>
-                        </div>
-                      </div>
+                      <a href="./view-analytics.html" class="tx-14 tx-red" style="text-decoration: underline;">
+                        View Analytics
+                      </a>
                     </td>
                   </tr>
                   <tr>
                     <th scope="row">
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck13">
-                        <label class="custom-control-label" for="customCheck13">
-                        <div class="avatar avatar-sm"><img src="./assets/img/staff.png" class="rounded-circle" alt=""></div>
-
-                        </label>
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3"></label>
                       <div>
 
                     </th>
-                    <td>Stella Bumblebee</td>
-                    <td>MTN</td>
-                    <td>01 Mar 2021</td>
-                    
-                    <td><span class="badge badge-active tx-14">Approved</span> </td>
+                    <td>HOR Campaign</td>
+                    <td>SMS</td>
+                    <td>#0.00</td>
+                    <td>#0.00</td>
+                    <td>01 Mar, 2021</td>
+                    <td><span class="badge badge-active tx-14">Active</span> </td>
                     <td>
-                      <div class="dropdown">
-                        <span class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </span>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="./view-sender.html"> <i data-feather="eye" class="favourite-icon mr-2 wd-15 ht-15"></i>View</a>
-                          <a class="dropdown-item" href=""> <i data-feather="edit" class="favourite-icon mr-2 wd-15 ht-15"></i>Edit</a>
-                          <a class="dropdown-item" href="#"><i data-feather="trash-2" class="favourite-icon mr-2 wd-15 ht-15"></i>Delete</a>
-                        </div>
-                      </div>
+                      <a href="./view-analytics.html" class="tx-14 tx-red" style="text-decoration: underline;">
+                        View Analytics
+                      </a>
                     </td>
                   </tr>
-                  
+                  <tr>
+                    <th scope="row">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4"></label>
+                      <div>
+
+                    </th>
+                    <td>Art Campaign</td>
+                    <td>Video</td>
+                    <td>#0.00</td>
+                    <td>#0.00</td>
+                    <td>01 Mar, 2021</td>
+                    <td><span class="badge badge-pink tx-14"> Closed</span> </td>
+                    <td>
+                      <a href="./view-analytics.html" class="tx-14 tx-red" style="text-decoration: underline;">
+                        View Analytics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5"></label>
+                      <div>
+
+                    </th>
+                    <td>Art Campaign</td>
+                    <td>Video</td>
+                    <td>#0.00</td>
+                    <td>#0.00</td>
+                    <td>01 Mar, 2021</td>
+                    <td><span class="badge badge-pink tx-14">Closed</span> </td>
+                    <td>
+                      <a href="./view-analytics.html" class="tx-14 tx-red" style="text-decoration: underline;">
+                        View Analytics
+                      </a>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
              </div>

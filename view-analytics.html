@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mysogi">
+    <title>Mysogi</title>
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/jqvmap/jqvmap.min.css" rel="stylesheet">
+
+    <link href="assets/lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="assets/lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="assets/lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="assets/lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Page CSS --> 
+    
+    <link rel="stylesheet" href="assets/css/progress.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+    <aside class="aside aside-fixed">
+      <div class="aside-header">
+        <a href="dashboard.html" class="aside-logo">
+          <div class="pd-50">
+            <img src="./assets/img/logo.svg" class="img-fluid logo" alt="" srcset="">
+          </div>
+        </a>
+        <a href="" class="aside-menu-link">
+          <i data-feather="menu"></i>
+          <i data-feather="x"></i>
+        </a>
+      </div>
+      <div class="aside-body">
+        <ul class="nav nav-aside">
+          <li class="nav-item"><a href="./campaign.html" class="nav-link"><i class="fa fa-archive mr-3"></i><span>Campaigns</span></a></li>
+          <li class="nav-item"><a href="./billing.html" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
+          <li class="nav-item"><a href="./sender.html" class="nav-link"><i class="fa fa-user mr-3 tx-muted"></i><span>Sender ID</span></a></li>
+          <li class="nav-item"><a href="./setting.html" class="nav-link"><i class="fa fa-cog mr-3"></i><span>Settings</span></a></li>
+          <li class="nav-item  active"><a href="./analytics.html" class="nav-link"><i class="fa fa-chart-bar mr-3" ></i> <span class="marine-active-menu">Analytics</span></a></li>
+        </ul>
+        
+      </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+      <div class="content-header shadow-dash bd-b-0">
+        <div class="content-search">
+          <i data-feather="search"></i>
+          <input type="search" class="form-control" placeholder="Search...">
+        </div>
+        <nav class="nav">
+          
+          <div class=" ml-md-4 ml-2 mg-t-5">
+            <div class="d-flex">
+              <div>
+              <a href="./wallet.html" class="tx-semibold tx-orange pd-t-1 mg-r-5" style="text-decoration: underline;">Fund wallet</a> 
+              </div>
+              <div>
+                <span class="mg-l-3 tx-14 tx-medium ">
+                  <img src="./assets/img/campaign.svg" alt="" srcset="">
+                  Balance:N50,000
+                </span>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-profile ml-md-4 ml-2">
+            <a href="" class="dropdown-link tx-dark tx-13 tx-medium" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+            <span class="d-none d-md-block"> John Doe</span> 
+              <div class="avatar avatar-sm mg-l-10"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+            </a><!-- dropdown-link -->
+            <div class="dropdown-menu dropdown-menu-right tx-13">
+              <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+              <h6 class="tx-semibold mg-b-1">Katherine Pechon</h6>
+              <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+  
+              <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+              <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+              <div class="dropdown-divider"></div>
+              <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
+              <a href="" class="dropdown-item"><i data-feather="life-buoy"></i> Forum</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
+              <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+            </div><!-- dropdown-menu -->
+          </div>
+        </nav>
+        
+      </div><!-- content-header -->
+
+      <div class="content-body">
+        <div class="container pd-x-0">
+         
+          <div class="row justify-content-between">
+            <div class="col-md-6 col-6">
+              <div class="d-flex">
+                <div>
+                  <i class="fa fa-angle-left mg-r-10 pd-t-15 tx-18"></i>
+                </div>
+                <div>
+                  <p class="tx-28 tx-bold mb-0">Art Campaign</p>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-xs-6 col-lg-4 mg-t-10">
+              <div class="card card-body p-3 rounded bd-0 shadow-sm">
+                <div class="d-flex d-lg-block d-xl-flex">
+                 <span><img class="icon img-fluid" src="assets/img/Total_Ads_Played.svg" class="marine-icons"></span>
+                 <div class="mg-l-5">
+                  <p class="tx-bold tx-bold tx-28 mg-b-0 lh-1 white">246K</p>
+                  <p class="tx-gray tx-12 tx-14 mb-0">Total Number of Impressions</p>
+
+                 </div>
+                </div>
+              </div>
+            </div><!-- col -->
+            <div class="col-sm-6 col-xs-6 col-lg-4 mg-t-10">
+              <div class="card card-body p-3 rounded bd-0 shadow-sm">
+                <div class="d-flex d-lg-block d-xl-flex">
+                 <span><img class="icon img-fluid" src="assets/img/Ads_Reached.svg" class="marine-icons"></span>
+                 <div class="mg-l-5">
+                  <p class="tx-bold tx-bold tx-28 mg-b-0 lh-1 white">9,320</p>
+                  <p class="tx-gray tx-12 tx-14 mb-0">Total Number of Clicks</p>
+
+                 </div>
+                </div>
+              </div>
+            </div><!-- col -->
+            <div class="col-sm-6 col-xs-6 col-lg-4 mg-t-10">
+              <div class="card card-body p-3 rounded bd-0 shadow-sm">
+                <div class="d-flex d-lg-block d-xl-flex">
+                 <span><img class="icon img-fluid" src="assets/img/Revenue_Generated.svg" class="marine-icons"></span>
+                 <div class="mg-l-5">
+                  <p class="tx-bold tx-bold tx-28 mg-b-0 lh-1 white">3,231</p>
+                  <p class="tx-gray tx-12 tx-14 mb-0">Total Number of Actions Performed</p>
+
+                 </div>
+                </div>
+              </div>
+            </div><!-- col -->
+            
+          <div class="col-lg-12 col-xl-12 mg-t-10">
+            <div class="row row-xs">
+             
+              <div class="col-lg-12 col-xl-12 mg-t-10 mg-md-t-30">
+                <div class="card card-height bd-0 rounded shadow-sm">
+                  <div class="card-header pd-t-20 pd-b-5 bd-b-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-6 col-12 mg-t-10 mg-md-t-0">
+                        <p class="tx-18 tx-bold mg-b-0">Monthly Ads</p>
+                      </div>
+                      <div class="col-md-3 col-12 mg-t-10 mg-md-t-0">
+                        <select class="custom-select">
+                          <option selected>Last 6 months</option>
+                          <option value="1">Last month</option>
+                          <option value="2">Last 3 months</option>
+                          <option value="3">Last 6 months</option>
+                        </select>
+                        <!-- <div id="reportrange" class="form-control date-picker tx-13">
+                          <i class="fa fa-calendar"></i>&nbsp;
+                          <span></span> <i class="fa fa-caret-down"></i>
+                      </div> -->
+                      </div>
+                    </div>
+                    
+                  </div><!-- card-header -->
+                  <div class="card-body pd-lg-25">
+                    <div class="chart-container" style="position: relative; min-height:30vh; width:100%">
+                      <canvas id="chartLine1"></canvas>
+                    </div>
+                  </div><!-- card-body -->
+                  <div class="card-footer  bd-t-0 footer-gray pd-x-20 pd-t-0 pd-b-20">
+                    <div class="row">
+                      <div class="col-6 col-md-4 col-lg-2 mg-t-10">
+                        <div class="d-flex align-items-center">
+                          <div class="wd-15 ht-10 rounded bg-primary mg-r-5"></div>
+                          <p class="tx-normal tx-rubik mg-b-0 tx-12">Number of Clicks</p>
+                        </div>
+                      </div><!-- col -->
+                      <div class="col-6 col-md-4 col-lg-2 mg-t-10">
+                        <div class="d-flex align-items-center">
+                          <div class="wd-15 ht-10 rounded bg-blue mg-r-5"></div>
+                          <p class="tx-normal tx-rubik mg-b-0 tx-12">Number of Actions</p>
+                        </div>
+                      </div><!-- col -->
+                      
+                     
+                    </div><!-- row -->
+                    </div><!-- card-footer  bd-t-0 -->
+                </div><!-- card -->
+              </div>
+              <div class="col-12 col-lg-6 mg-t-30">
+                <div class="card rounded shadow-sm bd-0">
+                  <div class="card-header pd-t-20 pd-b-5 bd-b-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-6 col-12 mg-t-10 mg-md-t-0 pd-r-0">
+                        <p class="tx-16 tx-bold mg-b-0 pd-t-5">Ads Report</p>
+                      </div>
+                      <div class="col-md-3 col-6 mg-t-10 mg-md-t-0 pd-r-0">
+                        <select class="custom-select">
+                          <option selected>August</option>
+                          <option value="1">January</option>
+                          <option value="2">February</option>
+                          <option value="3">June</option>
+                        </select>
+                        <!-- <div id="reportrange" class="form-control date-picker tx-13">
+                          <i class="fa fa-calendar"></i>&nbsp;
+                          <span></span> <i class="fa fa-caret-down"></i>
+                      </div> -->
+                      </div>
+                      <div class="col-md-3 col-6 mg-t-10 mg-md-t-0 ">
+                        <select class="custom-select">
+                          <option selected>Week 1</option>
+                          <option value="1">Week 1</option>
+                          <option value="2">week 2</option>
+                          <option value="3">Week 3</option>
+                        </select>
+                        <!-- <div id="reportrange" class="form-control date-picker tx-13">
+                          <i class="fa fa-calendar"></i>&nbsp;
+                          <span></span> <i class="fa fa-caret-down"></i>
+                      </div> -->
+                      </div>
+                    </div>
+                    
+                  </div><!-- card-header -->
+                  <div class="card-body pd-20">
+                    <div data-label="Example" class="df-example">
+                      <div class="" style="position: relative; min-height:30vh; width:100%">
+                        <canvas id="chartBar3"></canvas>
+                      </div>
+                    </div><!-- df-example -->
+            
+                  </div>
+                  <div class="card-footer  bd-t-0 footer-gray pd-x-20 pd-t-0 pd-b-20">
+                    <div class="row">
+                      <div class="col-6 col-md-4 col-lg-4 mg-t-10">
+                        <div class="d-flex align-items-center">
+                          <div class="wd-15 ht-10 rounded bg-pink mg-r-5"></div>
+                          <p class="tx-normal tx-rubik mg-b-0 tx-12">Action Performed</p>
+                        </div>
+                      </div><!-- col -->
+                      <div class="col-6 col-md-4 col-lg-3 mg-t-10">
+                        <div class="d-flex align-items-center">
+                          <div class="wd-15 ht-10 rounded bg-blue mg-r-5"></div>
+                          <p class="tx-normal tx-rubik mg-b-0 tx-12">Clicked Ads</p>
+                        </div>
+                      </div><!-- col -->
+                      
+                      <div class="col-6 col-md-4 col-lg-3 mg-t-10">
+                        <div class="d-flex align-items-center">
+                          <div class="wd-15 ht-10 rounded bg-gray mg-r-5"></div>
+                          <p class="tx-normal tx-rubik mg-b-0 tx-12">All Ads</p>
+                        </div>
+                      </div><!-- col -->
+                      
+                    </div><!-- row -->
+                    </div><!-- card-footer  bd-t-0 -->
+                  
+                </div>
+                
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-6 mg-t-10 mg-md-t-30">
+                <div class="card card-height bd-0 rounded shadow-sm">
+                  <div class="card-header pd-t-20 pd-b-5 bd-b-0 ">
+                    <div class="row justify-content-between">
+                      <div class="col-md-7 col-12 mg-t-10 mg-md-t-0 pd-md-r-0">
+                        <p class="tx-18 tx-bold mg-b-0 pd-t-5">Actions Performed</p>
+                      </div>
+                      <div class="col-md-5 col-12 mg-t-10 mg-md-t-0 pd-md-l-0">
+                        <select class="custom-select">
+                          <option selected>Last 3 years</option>
+                          <option value="1">Last year</option>
+                          <option value="2">Last 3 years</option>
+                          <option value="3">Last 6 years</option>
+                        </select>
+                        <!-- <div id="reportrange" class="form-control date-picker tx-13">
+                          <i class="fa fa-calendar"></i>&nbsp;
+                          <span></span> <i class="fa fa-caret-down"></i>
+                      </div> -->
+                      </div>
+                    </div>
+                    
+                  </div><!-- card-header -->
+                  <div class="card-body pd-20">
+                    <div class="row">
+                      <div class="col-md-6 col-12 pd-md-r-0">
+                        <div class="chart-container" style="position: relative; min-height:30vh; width:100%">
+                          <canvas id="chartDonut2" class="chartDo"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-12 pd-md-l-0">
+                        <div class="row mg-t-10 mg-md-t-60">
+                          <div class="col-md-6 col-12 mg-b-20 bd-orang">
+                            <div class="">
+                            <p class="tx-gray tx-12 mg-b-1">Mobile</p>
+                            <p class="tx-18 tx-bold mb-0">2,354</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-12 mg-b-20 bd-gree">
+                            <div class="">
+                            <p class="tx-gray tx-12 mg-b-1">WhatsApp</p>
+                            <p class="tx-18 tx-bold mb-0">12,432</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-12 mg-b-20 bd-purpl">
+                            <div class=" mg-r-5">
+                            <p class="tx-gray tx-12 mg-b-1">Text</p>
+                            <p class="tx-18 tx-bold mb-0">34,786</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div><!-- card-body -->
+                  
+                </div><!-- card -->
+              </div>
+              
+            </div>
+          </div><!-- row -->
+          
+          
+         <!-- export modal  -->
+         <div class="modal fade" id="exportModal" tabindex="-1" role="dialog" aria-labelledby="exportModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exportModalLabel">EXPORT AS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="tx-13">Select the format you will like to export as</p>
+                <div class="custom-control custom-radio pd-y-10">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                  <label class="custom-control-label" for="customRadio1"><img src="./assets/img/pdf.svg" class="img-fluid mg-r-5"/>PDF</label>
+                </div>
+
+                <div class="custom-control custom-radio pd-y-10">
+                  <input type="radio" id="customExcel" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customExcel"><img src="./assets/img/excel.svg" class="img-fluid mg-r-5"/>Excel</label>
+                </div>
+
+                <div class="custom-control custom-radio pd-y-10">
+                  <input type="radio" id="customCSV" name="customRadio" class="custom-control-input" >
+                  <label class="custom-control-label" for="customCSV"> <img src="./assets/img/file.svg" class="img-fluid mg-r-5"/> CSV</label>
+                </div>
+                
+              </div>
+              <div class="modal-footer bd-t-0">
+                <button type="button" class="btn btn-primary w-100" data-dismiss="modal" data-toggle="modal" data-target="#successModal">Export</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div><!-- container -->
+      </div>
+    </div>
+
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/lib/chart.js/Chart1.min.js"></script>
+    <script src="assets/lib/chart.js/utils.js"></script>
+    <script src="assets/lib/chart.js/chartjs-plugin-doughnutlabel.min.js"></script>
+    <script src="assets/js/dashforge.js"></script>
+    <script src="assets/js/dashforge.aside.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
+
+    <script>
+      $(function(){
+        'use strict'
+        var ctxLabel = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var ctxData1 = [19, 10, 14, 10, 9, 8, 20, 8, 5, 16, 10, 25];
+        var ctxData2 = [15, 9, 16, 7, 14, 6, 16, 9, 5, 10, 15, 0];
+        var ctxColor1 = '#4847E0';
+        var ctxColor2 = '#AF0606';
+
+        var stackLabel = ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'];
+        var stackData1 = [50, 25, 10, 15, 50,30,10];
+        var stackData2 = [0, 5, 0, 30, 10,20,5];
+        var stackData3 = [5, 5, 15, 10, 10,20,5];
+        var stackColor1 = '#4847E0';
+        var stackColor2 = '#F0F2F8';
+        var stackColor3 = '#FF9196'
+        
+        var ctx4 = document.getElementById('chartLine1');
+        new Chart(ctx4, {
+          type: 'line',
+          data: {
+            labels: ctxLabel,
+            datasets: [{
+              // lineTension: 0,
+              data: ctxData1,
+              borderColor: ctxColor1,
+              borderWidth: 2,
+              fill: false
+            },{
+              // lineTension: 0,
+              data: ctxData2,
+              borderColor: ctxColor2,
+              borderWidth: 2,
+              fill: false
+            }
+          ]
+          },
+          options: {
+            maintainAspectRatio: false,
+            legend: {
+              display: false,
+                labels: {
+                  display: false
+                }
+            },
+            scales: {
+              yAxes: [{
+                gridLines: {
+                  color: '#e5e9f2'
+                },
+                ticks: {
+                  beginAtZero:true,
+                  fontSize: 10,
+                  max: 25
+                }
+              }],
+              xAxes: [{
+                gridLines: {
+                  display: false
+                },
+                ticks: {
+                  beginAtZero:true,
+                  fontSize: 11
+                }
+              }]
+            }
+          }
+        });
+
+          /** PIE CHART 2 **/
+          var datapie2 = {
+            labels: ['Mobile', 'WhatsApp', 'Text' ],
+            datasets: [{
+              data: [2354,12432,34786],
+              backgroundColor: ['#E77140','#00DEA5','#995BF5'],
+              
+            }]
+          };
+  
+          var optionpie2 = {
+            maintainAspectRatio: false,
+            responsive: true,
+            legend: {
+              display: false,
+            },
+            title: {
+              display: true,
+              fontSize: 20,
+            },
+
+            animation: {
+              animateScale: true,
+              animateRotate: true
+            },
+            plugins: {
+            doughnutlabel: {
+              labels: [
+                {
+                  text: 'Male',
+                  font: {
+                    size: '30',
+                  },
+                  color:'#BCBCCB'
+                },
+                {
+                  text: '2,234',
+                  font: {
+                    size: '60',
+                    weight:'700'
+                  },
+                  color: 'black'
+
+                },
+                               
+              ]
+            }
+          }
+          };
+  
+          // For a pie chart
+          var ctx2 = document.getElementById('chartDonut2');
+          var myDonutChart = new Chart(ctx2, {
+            type: 'doughnut',
+            data: datapie2,
+            cutout: '90%',
+            options: optionpie2
+          });
+
+          
+          /*=============================================
+           Stacked chart 
+           =======================*/
+
+          const barOptions_stacked = {
+          maintainAspectRatio: false,
+          showLines: true,
+          responsive: true,
+        
+          hover :{
+              animationDuration:0
+          },
+          scales: {
+              xAxes: [{
+                  ticks: {
+                      beginAtZero:true,
+                      fontSize:11
+                  },
+                  scaleLabel:{
+                      display:false
+                  },
+                  barPercentage: 0.4,
+                  borderRadius:20,
+                  gridLines: {
+                  }, 
+                  stacked: true
+              }],
+              yAxes: [{
+                  gridLines: {
+                      display:false,
+                      color: "#fff",
+                      zeroLineColor: "#fff",
+                      zeroLineWidth: 0
+                  },
+                  ticks: {
+                    fontSize: 14,
+                  },
+                  stacked: true
+              }],
+          },
+          legend:{
+              display:false
+          },
+      };
+
+      // Stacked chart
+ 
+    var ctx3 = document.getElementById('chartBar3').getContext('2d');
+    new Chart(ctx3, {
+    type: 'bar',
+    
+    data: {
+      labels: stackLabel,
+              datasets: [{
+                data: stackData3,
+                backgroundColor: stackColor3
+              },
+              {
+                
+                data: stackData1,
+                backgroundColor: stackColor1
+              }, {
+                data: stackData2,
+                backgroundColor: stackColor2
+              },
+              
+            ]
+        },
+
+    options: barOptions_stacked,
+          });
+      }) 
+     
+    </script>
+  </body>
+</html>
